@@ -19,7 +19,7 @@ d) Write a function apply_interest(self) which applies an interest
 e) Implement the __str__ magic method and use it to print accounts.
    (1 point)
 """
-
+"lol"
 
 class Account:
     """ Here has to be a documentation string that describes
