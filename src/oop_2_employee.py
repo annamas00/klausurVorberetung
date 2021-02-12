@@ -16,7 +16,30 @@ c) Create a department dictionary (dictionary of strings to lists/sets
 
 
 class Employee:
-    pass
+    def __init__(self, name, department):
+        self.firstName = name
+        self.dep = department
+
+    def set_name(self, name):
+        self.firstName = name
+
+    def set_department(self, department):
+        self.dep = department
+
+    def print_dict(self):
+        print("<", self.name, ">, <", self.department, ">")
+
+    def __str__(self):
+        res = "*** Worker Info ***\n\n"
+        res += "Name: " + self.firstName + "\n"
+        res += "Department: " + self.dep + "\n\n"
+        return res
+
 
 if __name__ == "__main__":
     print("Employee application")
+    miles = Employee("Miles", "sales")
+    print(miles)
+    miles.set_name("Michael")
+    print(miles)
+    miles.print_dict()
