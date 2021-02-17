@@ -1,0 +1,13 @@
+hw11_crawling.test_analysis.AnalysisTest.test_01_get_text             FAILED    0/1 points
+hw11_crawling.test_analysis.AnalysisTest.test_02_get_headline         FAILED    0/1 points
+hw11_crawling.test_analysis.AnalysisTest.test_03_get_normalized_tokens FAILED    0/1 points
+hw11_crawling.test_analysis.AnalysisTest.test_04_pos_dict             FAILED    0/1 points
+hw11_crawling.test_analysis.AnalysisTest.test_05_filter_dict_homographs FAILED    0/1 points
+hw11_crawling.test_analysis.AnalysisTest.test_06_homographs           FAILED    0/1 points
+hw11_crawling.test_pos_match.SentenceTest.test_01_from_file           FAILED    0/2 points
+hw11_crawling.test_pos_match.PosExprTest.test_02_from_string          FAILED    0/0 points
+hw11_crawling.test_pos_match.PosExprTest.test_03_match_expr           FAILED    0/2 points
+hw11_crawling.test_pos_match.PosExprTest.test_04_matches              FAILED    0/4 points
+hw11_crawling.test_pos_match.PosExprTest.test_05_find                 FAILED    0/2 points
+####################################
+TOTAL: 0/16 points

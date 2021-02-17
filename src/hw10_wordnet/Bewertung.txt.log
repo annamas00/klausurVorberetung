@@ -1,0 +1,100 @@
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+E
+======================================================================
+ERROR: test_01_noun_similarity (hw10_wordnet.test_wordnet.WordnetTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw10_wordnet/WinxClub/src/hw10_wordnet/test_wordnet.py", line 25, in test_01_noun_similarity
+    simOfCar = [(pair, sim) for pair, sim in results if pair =='car-automobile'][0]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+F
+======================================================================
+FAIL: test_2_odd_man (hw10_wordnet.test_wordnet.WordnetTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw10_wordnet/WinxClub/src/hw10_wordnet/test_wordnet.py", line 32, in test_2_odd_man
+    self.assertEqual(leave_odd_man_out(["boy", "child", "father", "parent", "son", "illness","wife", "girl"]),('illness'))
+AssertionError: None != 'illness'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+F
+======================================================================
+FAIL: test_3_lemma_names (hw10_wordnet.test_wordnet.WordnetTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw10_wordnet/WinxClub/src/hw10_wordnet/test_wordnet.py", line 37, in test_3_lemma_names
+    self.assertEqual(len(self.hyponymSearcher.noun_lemmas), 1262)
+AssertionError: 0 != 1262
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+F
+======================================================================
+FAIL: test_4_hypernymOF (hw10_wordnet.test_wordnet.WordnetTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw10_wordnet/WinxClub/src/hw10_wordnet/test_wordnet.py", line 42, in test_4_hypernymOF
+    self.assertTrue(self.hyponymSearcher.hypernymOf(son, relative))
+AssertionError: None is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 2.586s
+
+FAILED (failures=1)
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/wangyindong/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+E
+======================================================================
+ERROR: test_05_hyponyms (hw10_wordnet.test_wordnet.WordnetTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw10_wordnet/WinxClub/src/hw10_wordnet/test_wordnet.py", line 54, in test_05_hyponyms
+    self.assertTrue("father" in hypos_relative)
+TypeError: argument of type 'NoneType' is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 2.108s
+
+FAILED (errors=1)

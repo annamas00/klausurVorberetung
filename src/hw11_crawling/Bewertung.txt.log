@@ -1,0 +1,148 @@
+E
+======================================================================
+ERROR: test_01_get_text (hw11_crawling.test_analysis.AnalysisTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_analysis.py", line 17, in test_01_get_text
+    last_paragraph = self.text.split("\n")[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.114s
+
+FAILED (errors=1)
+F
+======================================================================
+FAIL: test_02_get_headline (hw11_crawling.test_analysis.AnalysisTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_analysis.py", line 21, in test_02_get_headline
+    self.assertEqual(self.headline, "Hybrid Drivers Wanted")
+AssertionError: None != 'Hybrid Drivers Wanted'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.119s
+
+FAILED (failures=1)
+E
+======================================================================
+ERROR: test_03_get_normalized_tokens (hw11_crawling.test_analysis.AnalysisTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_analysis.py", line 24, in test_03_get_normalized_tokens
+    self.assertEqual(self.tokens_normalized[:4], ['advertisement', 'supported', 'behind', 'wheel'])
+TypeError: 'NoneType' object is not subscriptable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.108s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_04_pos_dict (hw11_crawling.test_analysis.AnalysisTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_analysis.py", line 28, in test_04_pos_dict
+    self.assertEqual(self.tagsDict["driving"], {'NN', 'VBG'})
+TypeError: 'NoneType' object is not subscriptable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.111s
+
+FAILED (errors=1)
+None
+E
+======================================================================
+ERROR: test_05_filter_dict_homographs (hw11_crawling.test_analysis.AnalysisTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_analysis.py", line 33, in test_05_filter_dict_homographs
+    self.assertEqual(len(self.tagsDict), 24)
+TypeError: object of type 'NoneType' has no len()
+
+----------------------------------------------------------------------
+Ran 1 test in 0.119s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_06_homographs (hw11_crawling.test_analysis.AnalysisTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_analysis.py", line 37, in test_06_homographs
+    self.assertTrue("light" in homographs)
+TypeError: argument of type 'NoneType' is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.108s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_01_from_file (hw11_crawling.test_pos_match.SentenceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_pos_match.py", line 15, in test_01_from_file
+    tokens = [t for sent in s for t in sent]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_02_from_string (hw11_crawling.test_pos_match.PosExprTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_pos_match.py", line 27, in test_02_from_string
+    self.assertIn("NN", m.expressions)
+AttributeError: 'NoneType' object has no attribute 'expressions'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+F
+======================================================================
+FAIL: test_03_match_expr (hw11_crawling.test_pos_match.PosExprTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_pos_match.py", line 31, in test_03_match_expr
+    self.assertTrue(PosExpr.match_expr("*", "NN"))
+AssertionError: None is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+E
+======================================================================
+ERROR: test_04_matches (hw11_crawling.test_pos_match.PosExprTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_pos_match.py", line 41, in test_04_matches
+    self.assertIn([("Toronto", "NNP")], all_matches("NNP"))
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_pos_match.py", line 40, in all_matches
+    return [m for s in self.sentences for m in PosExpr.from_string(expr).matches(s)]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_05_find (hw11_crawling.test_pos_match.PosExprTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw11_crawling/WinxClub/src/hw11_crawling/test_pos_match.py", line 46, in test_05_find
+    self.assertIn("prior year", find(self.sentences, "JJ NN"))
+  File "/usr/lib/python3.8/unittest/case.py", line 1176, in assertIn
+    if member not in container:
+TypeError: argument of type 'NoneType' is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

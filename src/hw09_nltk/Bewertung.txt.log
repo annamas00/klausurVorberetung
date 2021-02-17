@@ -1,0 +1,158 @@
+F
+======================================================================
+FAIL: test_00_constructor (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 12, in test_00_constructor
+    self.assertEqual(type(self.analyzer.token_counts), FreqDist)
+AssertionError: <class 'NoneType'> != <class 'nltk.probability.FreqDist'>
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+F
+======================================================================
+FAIL: test_01_numberOfTokens (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 15, in test_01_numberOfTokens
+    self.assertEqual(self.analyzer.numberOfTokens(), 4506)
+AssertionError: None != 4506
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+F
+======================================================================
+FAIL: test_02_size (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 18, in test_02_size
+    self.assertEqual(self.analyzer.vocabularySize(),1390)
+AssertionError: None != 1390
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+E
+======================================================================
+ERROR: test_03_diversity (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 21, in test_03_diversity
+    self.assertEqual(int(self.analyzer.lexicalDiversity()),3)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_04_get_keywords (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 24, in test_04_get_keywords
+    self.assertEqual(self.analyzer.getKeywords()[:3],['Analytical', 'Annabella', 'Lovelace'])
+TypeError: 'NoneType' object is not subscriptable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+F
+======================================================================
+FAIL: test_05_numberOfHapaxes (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 27, in test_05_numberOfHapaxes
+    self.assertEqual(self.analyzer.numberOfHapaxes(),936)
+AssertionError: None != 936
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+E
+======================================================================
+ERROR: test_06_avWordLength (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 30, in test_06_avWordLength
+    self.assertEqual(int(self.analyzer.avWordLength()),6)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_07_topSuffixes (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 34, in test_07_topSuffixes
+    self.assertEqual(set(self.analyzer.topSuffixes()), set(topSuffixes))
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_08_topPrefixes (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 38, in test_08_topPrefixes
+    self.assertEqual(set(self.analyzer.topPrefixes()), set(topPrefixes))
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+F
+======================================================================
+FAIL: test_09_tokensTypical (hw09_nltk.test_analyzer.AnalyzerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_analyzer.py", line 42, in test_09_tokensTypical
+    self.assertEqual(self.analyzer.tokensTypical(), typical)
+AssertionError: None != ['becoming', 'bed', 'beginner', 'beginning', 'being']
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+E
+======================================================================
+ERROR: test_01_unigram_word_models (hw09_nltk.test_lang_guesser.LangGuesserTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_lang_guesser.py", line 19, in test_01_unigram_word_models
+    some_word_counts_inEnglish = [language_model_cfd['English'][w] for w in ['universal','declaration','of']]
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_lang_guesser.py", line 19, in <listcomp>
+    some_word_counts_inEnglish = [language_model_cfd['English'][w] for w in ['universal','declaration','of']]
+TypeError: 'NoneType' object is not subscriptable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (errors=1)
+F
+======================================================================
+FAIL: test_02_guess (hw09_nltk.test_lang_guesser.LangGuesserTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw09_nltk/WinxClub/src/hw09_nltk/test_lang_guesser.py", line 28, in test_02_guess
+    self.assertEqual(self.langModeler.guess_language(language_model_cfd, text1), 'English')
+AssertionError: None != 'English'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (failures=1)

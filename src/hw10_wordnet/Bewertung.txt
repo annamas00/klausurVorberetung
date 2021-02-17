@@ -1,0 +1,7 @@
+hw10_wordnet.test_wordnet.WordnetTest.test_01_noun_similarity         FAILED    0/4 points
+hw10_wordnet.test_wordnet.WordnetTest.test_2_odd_man                  FAILED    0/4 points
+hw10_wordnet.test_wordnet.WordnetTest.test_3_lemma_names              FAILED    0/6 points
+hw10_wordnet.test_wordnet.WordnetTest.test_4_hypernymOF               FAILED    0/1 points
+hw10_wordnet.test_wordnet.WordnetTest.test_05_hyponyms                FAILED    0/3 points
+####################################
+TOTAL: 0/18 points

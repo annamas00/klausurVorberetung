@@ -1,0 +1,119 @@
+E
+======================================================================
+ERROR: test_01_courses (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_02_normalize (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_03_vocabulary (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_04_vectorspaced (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_05_distance (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_06_vector_mean (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+E
+======================================================================
+ERROR: test_07_classify (hw08_kmeans.test_kmeans.ClusteringTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/test_kmeans.py", line 11, in setUp
+    self.reader = Reader(filename)
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 12, in __init__
+    self.vector_spaced_data = self.data_to_vectorspace()
+  File .../tmp_repositories/abgabe/hw08_kmeans/WinxClub/src/hw08_kmeans/kmeans.py", line 34, in data_to_vectorspace
+    return [self.vectorspaced(course) for course in self.courses if course]
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (errors=1)
